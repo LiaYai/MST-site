@@ -10,7 +10,7 @@ A sleek, responsive website for a premium coffee machine rental service.
 
 - **HTML5** (semantic markup)
 - **CSS3** (Flexbox, Grid, custom properties)
-- **JavaScript** (scroll events, form handling)
+- **JavaScript** (scroll events)
 - **SVG** (vector icons)
 
 ## Installation
