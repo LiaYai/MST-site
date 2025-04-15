@@ -453,6 +453,7 @@ section {
 }
 
 a.footer-text {
+  transition: all 0.3s ease;
   color: var(--accent-color);
 }
 
@@ -464,6 +465,20 @@ a.footer-text {
 .social-icon {
   width: 32px;
   height: 32px;
+  transition: all 0.3s ease;
+  color: var(--text-color);
+}
+
+.social-icon:hover {
+  color: var(--accent-color);
+  filter: 
+    drop-shadow(0 0 5px rgba(224, 172, 255, 0.7));
+  transform: scale(1.1);
+}
+
+a.footer-text:hover {
+  text-shadow: 0 0 10px white;
+  transform: scale(1.05);
 }
 
 @media (width<=1440px) {
@@ -503,6 +518,12 @@ a.footer-text {
 }
 
 @media (width <=1150px) {
+
+  .about-icon {
+    width: 40px;
+    height: 33px;
+  }
+
   .form-container {
     margin: 0 4em;
     width: calc(100% - 8em);
@@ -575,11 +596,6 @@ a.footer-text {
 
   .left-image {
     display: none;
-  }
-
-  .about-icon {
-    width: 40px;
-    height: 33px;
   }
 
   .about-button,
