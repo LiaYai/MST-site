@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>CoffeeMagic</title>
+  </head>
+  <body>
+    <div class="header-wrapper">
+    <header class="header">
+      <a href="/" class="logo">CoffeeMagic</a>
+      <nav>
+        <a href="#hero" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Order</a>
+      </nav>
+    </header>
+  </div>
+
+    <section class="hero-section" id="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">Professional Coffee Solutions</h1>
+        <p class="hero-description">Rent top-quality espresso machines</p>
+        <ul class="benefits-list">
+          <li class="benefit-item">
+            <img src="assets/icons/check.svg" alt="Benefit" class="benefit-icon" />
+            <span class="benefit-text">No maintenance costs - we cover everything</span>
+          </li>
+          <li class="benefit-item">
+            <img src="assets/icons/check.svg" alt="Benefit" class="benefit-icon" />
+            <span class="benefit-text"
+              ><strong>30%</strong> cheaper than buying equipment outright</span
+            >
+          </li>
+          <li class="benefit-item">
+            <img src="assets/icons/check.svg" alt="Benefit" class="benefit-icon" />
+            <span class="benefit-text"
+              >Free <strong>17%</strong> premium coffee beans with every rental</span
+            >
+          </li>
+        </ul>
+      </div>
+      <button class="order-button hero-button" type="button">order</button>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-image left-image">
+        <img src="assets/images/about1.jpeg" alt="About" loading="lazy" />
+      </div>
+      <div class="about-content">
+        <ul class="about-list">
+          <li class="about-list-item">
+            <img src="assets/icons/item.svg" class="about-icon" alt="Item" />
+            <span class="about-text"
+              >Complete setup included: machine + grinder + water filtration system</span
+            >
+          </li>
+          <li class="about-list-item">
+            <img src="assets/icons/item.svg" class="about-icon" alt="Item" />
+            <span class="about-text"
+              >Choose from monthly or annual plans with no long-term obligations. Upgrade,
+              downgrade, or cancel anytime. Includes free relocation within the city if your
+              business moves.</span
+            >
+          </li>
+          <li class="about-list-item">
+            <img src="assets/icons/item.svg" class="about-icon" alt="Item" />
+            <span class="about-text"
+              >Top-tier espresso machines from European manufacturers (La Marzocco, Victoria
+              Arduino)</span
+            >
+          </li>
+          <li class="about-list-item">
+            <img src="assets/icons/item.svg" class="about-icon" alt="Item" />
+            <span class="about-text"
+              >Monthly contracts with free maintenance and quick replacement guarantee</span
+            >
+          </li>
+        </ul>
+        <button class="order-button about-button" type="button">order</button>
+      </div>
+      <div class="about-image right-image">
+        <img src="assets/images/about2.jpeg" alt="About" loading="lazy" />
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="form-container">
+        <div class="form-wrapper">
+          <h2 class="form-title">Get in Touch</h2>
+          <form class="contact-form">
+            <input
+              class="input"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              required />
+
+            <input
+              class="input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="E-mail"
+              required />
+
+            <div class="checkbox-group">
+              <input type="checkbox" id="privacy" name="privacy" required />
+              <label for="privacy"> I accept <a href="#">Privacy policy</a> </label>
+            </div>
+            <button type="submit" class="order-button submit-button ">Submit form</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <nav>
+        <a href="#hero" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Order</a>
+      </nav>
+      <p>© 2025 Alyssa's Site</p>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
