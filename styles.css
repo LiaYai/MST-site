@@ -34,7 +34,7 @@
   --accent-color: #e0acff;
   --bg-color: #222222;
   --form-color: #55565a;
-  --main-bg-color: #282829
+  --main-bg-color: #282829;
 }
 
 * {
@@ -47,7 +47,6 @@ html {
   font-size: 20px;
   scroll-behavior: smooth;
   display: flex;
-
 }
 
 a {
@@ -75,7 +74,6 @@ body {
   left: 0;
   z-index: 1000;
   width: 100%;
-  
 }
 
 .header {
@@ -159,9 +157,6 @@ nav {
 
 section {
   height: fit-content;
-}
-
-section {
   margin-bottom: 5em;
 }
 
@@ -411,7 +406,6 @@ section {
 }
 
 .footer {
-  
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -428,6 +422,48 @@ section {
 
 .footer nav .nav-link {
   font-size: 1em;
+}
+
+.footer-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-wrapper {
+  padding: 2em 9em 3em 8em;
+}
+
+.footer-section:last-child {
+  margin-top: 1.5em;
+}
+
+.footer-button {
+  padding-block: 1.5em;
+  width: 9em;
+  font-size: 1em;
+  font-style: italic;
+}
+
+.footer-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 150%;
+}
+
+a.footer-text {
+  color: var(--accent-color);
+}
+
+.socials {
+  display: flex;
+  gap: 1.5em;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
 }
 
 @media (width<=1440px) {
@@ -460,6 +496,10 @@ section {
   .about-list-item:not(:first-child) {
     padding-top: 1.5em;
   }
+
+  .footer-wrapper {
+    padding: 2em 3em;
+  }
 }
 
 @media (width <=1150px) {
@@ -480,6 +520,20 @@ section {
   .form-title {
     text-align: center;
     font-size: 2.5em;
+  }
+
+  .logo {
+    font-size: 1.5em;
+  }
+
+  .social-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .footer-button {
+    width: 8em;
+    padding: 1em;
   }
 }
 
@@ -528,7 +582,8 @@ section {
     height: 33px;
   }
 
-  .about-button, .submit-button {
+  .about-button,
+  .submit-button {
     padding-block: 1.2em;
   }
 
@@ -544,9 +599,27 @@ section {
   .form-title {
     font-size: 2em;
   }
+
+  .social-icon {
+    width: 18px;
+    height: 18px;
+  }
 }
 
-@media (max-width: 480px) {
+@media (width <=650px) {
+
+  .footer-section:first-child {
+    justify-content: end;
+  } 
+
+  .footer .logo, .footer-button {
+    display: none;
+  }
+
+  
+}
+
+@media (width <= 480px) {
   html {
     font-size: 14px;
   }
@@ -585,7 +658,19 @@ section {
     font-size: 1em;
   }
 
-  .about-button, .submit-button, .hero-button {
+  .about-button,
+  .submit-button,
+  .hero-button {
     padding-block: 0.75em;
+  }
+
+  .footer-section:first-child {
+    justify-content: center;
+  }
+
+  .footer-section:last-child {
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 2em;
   }
 }
